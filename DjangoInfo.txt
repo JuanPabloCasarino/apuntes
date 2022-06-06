@@ -1,0 +1,25 @@
+pip3 install Django
+django-admin startproject name
+
+PASOS PARA CREAR UNA WEB:
+python name.py runserver
+create app----> python name.py startapp 'nameapp'
+'installed apps'-----> agregar la app creada nueva\
+create view----> en views.py: 
+from django.http import HttpResponse
+def index(index):
+    return HttpResponse("Hello, world!")
+
+
+agregar urls----> crear un archivo llamado urls.py en la app 
+creada y poner: 
+from django.urls import path
+from . import views
+url patterns =[
+path("",views."lo que se quiere ver", name="name")
+]
+en urls.py de lecture3 hacer esto:
+agregar en urlpatterns= [
+path('hello/',include("app.urls"))
+]
+y tambien: from django.urls import include, path
