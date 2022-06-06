@@ -1,0 +1,17 @@
+descargar repositorio de la nube: git clone "url"
+listar todas las capretas: ls
+cd: moverte entre carpetas
+touch nombre.hmtl: crear archivos
+git add nombre.hmtl: guardar archivos para luego ser commiteados
+git commit -m "message": subirlos como snapshot con un mensaje
+git status: te dice en que estado esta el archivo local
+git commit -am "message": add y commit juntos
+git push: los cambios se suben a la nube
+git pull url: actualizar tu repositorio local desde la nube
+git log: describe cada commit con su info 
+git reset --hard 'commit': vuelve a un commit anterior
+git reset --hard origin/master
+git branch: te dice las branch q existen
+git checkout -b nombre: creas una branch y te moves
+git checkout nombre: solo te moves 
+git merge 'nombre de la otra branch': combina las dos branchs
